@@ -1,0 +1,145 @@
+:root{
+--primary--green:#84D62C;
+		--border-color:#E0E0E0;
+		--white--color:#FFFFFF;
+		--bg-color:#F9F9F9;
+		--text-color:#B9B9B9;
+}
+body{
+	font-family: Tahoma;
+	font-size: 15;
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 100%;
+
+}
+.my-form{
+	border: 13px solid var(--border-color);
+	width: 550px;
+	height: 700px;
+	margin: 20px auto;
+	padding: 20px 40px;
+}
+.text-green{
+	color:var(--primary--green);
+}
+.text-bold{
+	font-weight: bold;
+}
+.grey-bg{
+	background-color: var(--bg-color);
+}
+.input-field{
+	height: 50px;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+.input-50{
+/*	margin-top: 15px;*/
+	width: 45%;
+	height: 50px;
+	border: solid 10px red;
+	margin-top: 15px;
+	display: inline-block;
+}
+.input-50 .input{
+		width: 150px;
+}
+.input{
+	height: 80%;
+	border: none;
+	width: 85%;
+	padding: 5px 3px;
+	display: inline-block;
+
+}
+.icon{
+	color: var(--text-color);
+	border-right: 2px solid rgba(0, 0, 0, 0.2);
+	padding: 0 20px 0 30px;
+}
+.dob{
+	width: 45%;
+	display: inline-block	;
+}.gender{
+	width: 53%;
+	display: inline-block;
+}
+.bodrer-grey{
+	border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+.input-sm{
+	border-radius: 5px;
+	height: 50px;
+	width: 50px;
+	max-width: 70px	;
+	padding-left: 20px;
+	display: inline-block;
+}
+.input-md{
+/*	border-radius: 5px;*/
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 50px;
+	width: 110px;
+	margin-right: -5px;
+	padding-left: 30px;
+	display: inline-block;
+}
+.female{
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}.male{
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.payment{
+	padding-top: 20px;
+}
+.br-5{
+	border-radius: 2px;
+}
+.btn{
+	color: grey;
+	padding: 15px 110px;
+	margin-right: -5px;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+.active{
+	color: white;
+	background-color: var(--primary--green);
+}
+.btn:hover{
+	color: white;
+	background-color: var(--primary--green);
+}
+input:focus{
+	outline: none;
+}
+.inline{
+	display: inline;
+}
+.date{
+	width: 52%;
+	display: inline-block;
+	height: 50px;
+	margin-top: -105px;
+
+}
+.date select{
+	padding: 15px 30px;
+	width: 145px;
+	height: 50px;
+	margin-left: -5px;
+	display: inline-block;
+}
+.mr-5{
+	margin-right: 5px;
+}
+.term-label{
+	color: var(--text-color);
+	font-size: 13px;
+}

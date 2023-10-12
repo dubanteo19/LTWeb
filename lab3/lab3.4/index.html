@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Lab3.4</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div class="container">
+			<form class="my-form">
+				<div class="account">
+					<p class="text-bold text-green">Account</p>
+					<div class="input-field grey-bg bodrer-grey">
+						<i class="icon fa-solid fa-user"></i>
+						<input class="input grey-bg" type="text" name="text" placeholder="Full Name">
+					</div>
+					<div class="input-field grey-bg bodrer-grey">
+						<i class="icon fa-solid fa-envelope"></i>
+						<input class="input grey-bg" type="email" name="email" placeholder="Email Adress">
+					</div>
+					<div class="input-field grey-bg bodrer-grey">
+						<i class="icon fa-solid fa-key"></i>
+						<input class="input grey-bg" type="password" name="password" placeholder="Password">
+					</div>
+					<div class="dob ">
+						<p class="text-bold text-green">Date of Birth</p>
+						<input class="input-sm grey-bg bodrer-grey" type="text" name="day" placeholder="DD">
+						<input class="input-sm grey-bg bodrer-grey" type="text" name="day" placeholder="MM">
+						<input class="input-sm grey-bg bodrer-grey" type="text" name="day" placeholder="YYYY">
+					</div>
+					<div class="gender">
+						<p class="text-bold text-green">Gender</p>
+						<input class="input-md grey-bg male" type="text" name="day" placeholder="Male">
+						<input class="input-md grey-bg female" type="text" name="day" placeholder="Female">
+					</div>
+					<div class="payment">
+						<p class="text-bold text-green">Payment Detail</p>
+						<button type="button" class="grey-bg bodrer-grey br-5 btn active">Credit Card</button>
+						<button type="button" class="grey-bg bodrer-grey br-5 btn">Paypal</button>
+						<div class="input-field grey-bg bodrer-grey">
+						<i class="icon fa-solid fa-credit-card"></i>
+						<input class="input grey-bg" type="text" name="text" placeholder="Card Number">
+						<div class="input-50 grey-bg bodrer-grey mr-5">
+						<i class="icon fa-solid fa-user"></i>
+						<input class="input grey-bg" type="text" name="text" placeholder="Card CVC">
+						</div>
+						<div class="date ">
+							<select class="inline grey-bg bodrer-grey">
+								<option value="">01 Jan</option>
+									<option value="">02 Jan</option>
+									<option value="">03 Jan</option>
+									<option value="">04 Jan</option>
+									<option value="">05 Jan</option>
+									<option value="">06 Jan</option>
+									<option value="">07 Jan</option>
+									<option value="">08 Jan</option>
+									<option value="">09 Jan</option>
+									<option value="">010 Jan</option>	
+							</select ><select class="inline grey-bg bodrer-grey">
+									<option value="">2011</option>
+									<option value="">2012</option>
+									<option value="">2013</option>
+									<option value="">2014</option>
+									<option value="">2015</option>
+									<option value="">2016</option>
+									<option value="">2017</option>
+									<option value="">2018</option>
+									<option value="">2019</option>
+									<option value="">2020</option>
+							</select >
+							
+						</div>
+						<div class="term">
+							<p class="text-bold text-green">Term and Conditions</p>
+							<input type="checkbox" name="term" id="">
+							<label for="" class="term-label">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+						</div>
+					</div>
+			</form>
+		</div>
+	</body>
+<script type="text/javascript">
+	
+	var payment = document.getElementsByClassName("payment");
+	var btns = payment[0].getElementsByClassName("btn");
+   for(var i = 0, length1 = btns.length; i < length1; i++){
+   		btns[i].addEventListener("click", function(){
+   			var current = document.getElementsByClassName("active");
+   			current[0].className=current[0].className.replace(" active", "");
+			this.className+=" active";   			
+   		});
+
+   }
+</script>	
+</html>
