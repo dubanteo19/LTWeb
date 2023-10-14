@@ -1,0 +1,16 @@
+.text-center{
+	text-align:center;
+}
+
+.text-large{
+	font-size: 50px;
+}
+.container{
+	width: 100%;
+}
+img{
+	margin: auto auto;
+	display: block;
+	border-radius: 10px;
+	transition: 0.9s ease;
+}
