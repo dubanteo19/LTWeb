@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Lab4.6</Lab4></title>
+		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+	</head>
+	<body>
+		<div class="navigation">
+			<ul class="nav">
+				<li class="li"><a href="index.html" class="link">Form 1</a></li>
+				<li class="li"><a href="form2.html" class="link">Form 2</a></li>
+				<li class="li"><a href="form3.html" class="link">Form 3</a></li>
+			</ul>
+		</div>
+		<div class="container">
+<form class="my-form">
+			<h1 class="text-center text-bold mb-5">
+				Contact Us
+			</h1>
+			<div class="field-container width-90">
+			<input type="text" class="field " name="full-name" placeholder="Enter your name">
+			<p class="error" name="fullNameE"></p>
+			<label class="my-label">FULL NAME*</label>
+			</div>
+			<div class="field-container width-45 mr-5">
+			<input type="text" class="field " name="email" placeholder="Enter your email">
+			<label class="my-label">EMAIL*</label>
+			</div>
+				<div class="field-container width-45 mr-5">
+			<input type="text" class="field width-45" name="phone" placeholder="Enter your phone numbers">
+			<label class="my-label">PHONE*</label>
+			</div>
+			<p class="error" name="emailE"></p>
+			<p class="error" id="phoneE" name="phoneE"></p>
+				<div class="field-container width-90">
+			<select class="field higher" name="service">
+				<option hidden>Please chooses</option>
+				<option >Option 1</option>
+				<option >Option 2</option>
+				<option >Option 3</option>
+			</select>
+			<label class="my-label">NEEDED SERVICES*</label>
+				<p class="error" name="serviceE"></p>
+			</div>
+			<div class="field-container width-90">
+			<textarea class="field textarea" name="message" placeholder="Your message here..." ></textarea>
+			<label class="my-label">MESSAGE*</label>
+				<p class="error" name="messagE"></p>
+			</div>
+			<button class="black-btn" type="button" onclick="submitForm1()">Submit <span>&#8594;</span></button>
+		</form>
+		</div>
+	</body>
+	<script type="text/javascript" src="js.js"></script>
+</html>

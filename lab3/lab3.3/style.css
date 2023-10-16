@@ -2,8 +2,10 @@
 	--light-grey:#F7F7F7;
 	--text-color:#D4D4D4;
 	--border-color:#E6E6E6;
+	--primary-green:#76A713;
 }
 body{
+
 	font-family: Tahoma;
 	font-size: 14;
 	margin: 0;

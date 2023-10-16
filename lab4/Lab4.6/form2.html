@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+ <html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form 2</title>
+	<link rel="stylesheet" type="text/css" href="style/styleF2.css">	
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+		<div class="navigation">
+			<ul class="nav">
+				<li class="li"><a href="index.html" class="link">Form 1</a></li>
+				<li class="li"><a href="form2.html" class="link">Form 2</a></li>
+				<li class="li"><a href="form3.html" class="link">Form 3</a></li>
+			</ul>
+		</div>
+	<div class="container">
+			<div class="mask"></div>
+		<div class="form-container">
+			<form class="my-form">
+				<h2	class="form-title">Sign in</h2>
+				<div class="input-field">
+					<input type="text" name="userName" placeholder="username or email">
+				</div>
+				<div class="input-field">
+					<input type="password" name="password" placeholder="password">
+				</div>
+				<p class="errorr" name="userNameE"></p>
+				<p class="errorr" name="passwordE"></p>
+				<p class="status" name="status"></p>
+				<p class="status" name="hint"></p>
+				<button class="btn" type="button" onclick="submitForm2()">
+					SIGN IN
+				</button>
+				<p class="grey subtitle">Or login with</p>
+				<div class="logos">
+					<img src="img/fb.png">
+					<img src="img/google.png">
+				</div>
+				<p class="sign-up">Sign up</p>
+			</form>
+		</div>
+			
+	</div>
+		
+	</body>
+	<script type="text/javascript" src="jsF2.js"></script>
+	</html>

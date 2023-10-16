@@ -82,3 +82,8 @@ input::placeholder, {
 	border-radius: 50px;
 	cursor: pointer;
 }
+.navigation{
+	width: 100%;
+	height: 50px;
+	background-color: red;
+}
